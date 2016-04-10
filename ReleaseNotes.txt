@@ -1,0 +1,23 @@
+﻿<h3>Blog</h3>
+<p class="Contributor">
+	Heather Buchel <br />
+	<a href="mailto:hbuchel@gmail.com">hbuchel@gmail.com</a><br />
+	<a href=></a><br />
+</p>
+<hr/>
+<div class="License">
+	<h3>About the Blog</h3>
+	<p class="Owner">
+		<b>Version CHANGEME</b><br /><br />
+	</p>
+	<p>Description about version.</p>
+	
+	<h4>Bug Fixes</h4>
+	<ul>
+			<li>List</li>
+			<li>of</li>
+			<li>bug</li>
+			<li>fixes</li>
+	</ul>
+	
+</div>

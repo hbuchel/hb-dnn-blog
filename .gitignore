@@ -1,0 +1,31 @@
+$tf/
+$tf1/
+BuildProcessTemplates/
+install/
+Documentation/
+.build/
+packages/
+# Visual Studio 2015 cache/options directory
+.vs/
+
+# ignore all out of the bin folder, except for the VSIX file
+VSIX/DNNTemplates/[Bb]in/
+!VSIX/DNNTemplates/[Bb]in/*.vsix
+
+# Ignore other VS files that the templates project doesn't need in source control
+<<<<<<< HEAD
+[Oo]bj/
+*.[Cc]ache
+*.[Uu]ser
+
+[Bb]in/
+
+# User-specific files
+*.suo
+*.obj
+*.user
+*.userosscache
+*.sln.docstates
+
+
+*.cache
