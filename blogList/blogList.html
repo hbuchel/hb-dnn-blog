@@ -1,0 +1,13 @@
+﻿<h1>Blog List</h1>
+
+<div ng-repeat="post in posts">
+  <h2><a ng-href="{{ '/post/' + post.id }}">{{ post.title }}</a></h2>
+  <p>{{ post.summary }}</p>
+  <div>
+    <a ng-href="{{ post.editUrl }}">Edit</a>
+    <div ng-click="$parent.deleteItem">Delete Item</div>
+    <!--<a data-bind="attr: {href: editUrl}">[Resx:{key:"EditItem"}]</a>
+    <a data-bind="click: $parent.deleteItem" href="#">[Resx:{key:"DeleteItem"}]</a>-->
+  </div>
+</div>
+

@@ -1,12 +1,19 @@
 ﻿[JavaScript:{ jsname: "JQuery" }]
-[JavaScript:{ jsname: "Knockout" }]
+<!-- [JavaScript:{ jsname: "Knockout" }] -->
 [JavaScript:{ path: "~/Resources/Shared/scripts/dnn.jquery.js"}]
-[JavaScript:{ path: "~/DesktopModules/Blog/scripts/ItemView.js"}]
+[JavaScript:{ path: "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"}]
+[JavaScript:{ path: "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js"}]
+[JavaScript:{ path: "~/DesktopModules/Blog/scripts/app.js"}]
+[JavaScript:{ path: "~/DesktopModules/Blog/scripts/blogFactory.js"}]
+[JavaScript:{ path: "~/DesktopModules/Blog/blogList/blogList.js"}]
+<!-- [JavaScript:{ path: "~/DesktopModules/Blog/scripts/ItemView.js"}] -->
 
 [ModuleAction:{controlKey : "Edit", securityAccessLevel : "Edit",  titleKey: "EditModule", localResourceFile: "~/DesktopModules/Blog/App_LocalResources/View.resx" }]
 
-<div id="Items-[ModuleContext:ModuleId]">
-    <ul class="tm_tl" data-bind="foreach: itemList">
+<div id="Items-[ModuleContext:ModuleId]" data-ng-app="blogApp">
+  <base href="/" />
+  <div data-ng-view></div>
+    <!--<ul class="tm_tl" data-bind="foreach: itemList">
         <li class="tm_t">
             <h3 data-bind="text: title"></h3>
             <div class="tm_td" data-bind="text: summary"></div>
@@ -16,8 +23,9 @@
                 <a data-bind="click: $parent.deleteItem" href="#">[Resx:{key:"DeleteItem"}]</a>
             </div>
         </li>
-    </ul>
+    </ul>-->
 </div>
+
 
 <script language="javascript" type="text/javascript">
     jQuery(function ($) {

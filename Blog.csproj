@@ -105,8 +105,12 @@
     </Content>
     <Content Include="App_LocalResources\Settings.resx" />
     <Content Include="App_LocalResources\View.resx" />
+    <Content Include="blogList\blogList.html" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="blogList\blogList.js" />
+    <Content Include="blogPost\blogPost.html" />
+    <Content Include="blogPost\blogPost.js" />
     <Content Include="BuildScripts\ModulePackage.targets" />
     <Content Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
     <Content Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
@@ -120,6 +124,8 @@
     <Compile Include="Components\IItemRepository.cs" />
     <Compile Include="Components\Item.cs" />
     <Compile Include="Components\ItemRepository.cs" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\blogFactory.js" />
     <Content Include="Scripts\ItemEdit.js" />
     <Content Include="Scripts\ItemView.js" />
     <Content Include="Scripts\QuickSettings.js" />
